@@ -1,0 +1,13 @@
+package java8practice.com;
+//after java8 the lambda expression
+interface Greeting {
+    void sayHello();
+}
+class Main {
+    public static void main(String[] args) {
+        Greeting g = ()-> System.out.println("Hello");
+        g.sayHello();
+    }
+}
+-------------output---------
+Hello
