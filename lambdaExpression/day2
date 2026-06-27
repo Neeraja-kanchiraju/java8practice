@@ -1,0 +1,25 @@
+package java8practice.com;
+//before java8 the addition program
+interface Addition{
+    int add(int a,int b);
+}
+
+class Main1{
+
+    public static void main(String args[]){
+
+        Addition ad = new Addition(){
+
+            @Override
+            public int add(int a,int b){
+                return a+b;
+            }
+
+        };
+
+        System.out.println(ad.add(10,20));
+    }
+
+}
+------output-------
+  30
